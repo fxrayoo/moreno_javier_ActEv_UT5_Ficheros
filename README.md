@@ -1,18 +1,31 @@
-## Getting Started
+RESUMEN PROYECTO:
+He desarrollado una aplicación de consola en Java que permite gestionar usuarios y notas personales siguiendo las instrucciones. Los datos se guardan en ficheros de texto.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+-----------------------------------------------------------------------------------------------------------------------------------------------
 
-## Folder Structure
+ESTRUCTURA:
 
-The workspace contains two folders by default, where:
+- data/users.txt: Aquí se guardan los emails y contraseñas (email;password).
+- data/usuarios: Esta carpeta es donde se crean los directorios de cada usuario.
+- Sanitización: Reemplaza los "." y "@" por guiones bajos "_".
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+-----------------------------------------------------------------------------------------------------------------------------------------------
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+REQUISITOS:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- Ficheros: Uso de la librería "java.nio.file" (Path y Files).
+- Try-with-resources: He usado esta estructura para asegurar que la lectura y escritura se cierran sin problemas
+- Validaciones: El programa comprueba que los campos no estén vacíos, que el email tenga un formato básico y que no se registren usuarios duplicados.
+- Gestión de Notas: Se pueden crear, listar, ver el contenido de una nota específica y borrarlas. Al borrar, el programa lee el archivo y lo sobreescribe
 
-## Dependency Management
+-----------------------------------------------------------------------------------------------------------------------------------------------
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+BONUS
+
+- Búsqueda: He añadido una opción para buscar notas por palabra clave.
+- Git/GitHub: He subido el proyecto a GitHub con varios commits para mostrar el progreso y he incluido un `.gitignore` para no subir archivos basura de Java.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+EJECUTAR:
+Solo hay que ejecutar la clase `App.java`. Si no existe la carpeta `data`, el programa la creará automáticamente al registrar al primer usuario.
