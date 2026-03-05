@@ -1,4 +1,4 @@
-public static void login(Scanner sc) {
+public static void iniciar_sesion(Scanner sc) {
     System.out.print("Email: ");
     String email = sc.nextLine();
     System.out.print("Contraseña: ");
