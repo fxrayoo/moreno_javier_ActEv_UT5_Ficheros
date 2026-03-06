@@ -23,9 +23,9 @@ REQUISITOS:
 BONUS
 
 - Búsqueda: He añadido una opción para buscar notas por palabra clave.
-- Git/GitHub: He subido el proyecto a GitHub con varios commits para mostrar el progreso y he incluido un `.gitignore` para no subir archivos basura de Java.
+- Git/GitHub: He subido el proyecto a GitHub con varios commits para mostrar el progreso y he incluido un ".gitignore" para no subir archivos basura de Java.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
 EJECUTAR:
-Solo hay que ejecutar la clase `App.java`. Si no existe la carpeta `data`, el programa la creará automáticamente al registrar al primer usuario.
+Ejecutamos la clase "App.java". Y Si no existiera la carpeta "data", el programa la creararía automáticamente al registrar al primer usuario.
